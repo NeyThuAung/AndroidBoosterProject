@@ -15,6 +15,9 @@ class StudentRepository(val application: Application) {
         }
     }
 
+
+
+    //insert method call
     suspend fun insertStudent(student: Student){
         db.studentDao.insertStudent(student)
     }
